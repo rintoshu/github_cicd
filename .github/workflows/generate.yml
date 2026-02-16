@@ -1,6 +1,5 @@
 name: Generate functions
-on: 
-    workflow_dispatch:
+on: push
 jobs:
     generate:
         runs-on: ubuntu-latest
