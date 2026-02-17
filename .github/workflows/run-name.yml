@@ -3,7 +3,9 @@ run-name: Run by @${{ github.actor }}
 on: 
     workflow_dispatch:
 jobs:
+    name: Super Useful Job
     print:
         runs-on: ubuntu-latest
         steps:
+            - name: Amazing Script
             - run: echo "Hello"
