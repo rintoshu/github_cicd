@@ -1,0 +1,12 @@
+name: GITHUB_OUTPUT
+on: 
+    workflow_dispatch:
+jobs:
+    share:
+        runs-on: ubuntu-latest
+        steps:
+            - id: sourc
+              run: echo "resul=Good" >> "${GITHUB_OUTPUT}"
+            - env:
+                RESUL: ${{ steps.sourc.outputs.resul }}
+              run: echo "${RESUL}"
